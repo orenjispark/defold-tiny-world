@@ -1,0 +1,41 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 1080
+height = 1920
+high_dpi = 1
+
+[android]
+input_method = HiddenInputField
+
+[html5]
+scale_mode = stretch
+wasm_streaming = 1
+show_fullscreen_button = 0
+show_made_with_defold = 0
+splash_image = /main/assets/sprites/capybara/8.png
+
+[project]
+title = Animate
+version = 1.0.0
+dependencies#0 = https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip
+dependencies#1 = https://github.com/Insality/druid/archive/refs/tags/1.1.2.zip
+dependencies#2 = https://github.com/Insality/defold-event/archive/refs/tags/11.zip
+
+[physics]
+scale = 0.1
+max_collision_object_count = 512
+max_contacts = 512
+max_collisions = 512
+gravity_y = -300.0
+
+[input]
+game_binding = /builtins/input/all.input_bindingc
+
+[gamedistribution]
+game_id = GAME_ID_HERE
+

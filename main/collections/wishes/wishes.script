@@ -1,0 +1,231 @@
+function init(self)
+	msg.post("black", "enable")
+	go.set("black#sprite", "tint", vmath.vector4(0, 0, 0, 0.2))
+
+	particlefx.play("snow_particle#snow")
+	particlefx.play("snowball_particle#snow_ball")
+	particlefx.play("fire_particle#fire")
+
+	local lamps = {}
+	for i = 1, 18, 1 do
+		local lamp = msg.url(nil, "lamp_" .. i, nil)
+		table.insert(lamps, lamp)
+		msg.post(lamp, "disable")
+	end
+
+	for i = 1, 4, 1 do
+		local frame_sprite = msg.url(nil, "frames", "frame_" .. i)
+		go.set(frame_sprite, "tint", vmath.vector4(0, 0, 0, 1))
+	end
+
+	-- animate lamps turning on one by one, with 0.3 seconds delay between each
+	-- and then turn off one by one with 0.3 seconds delay between each
+	-- and then loop back to the first lamp after the last one
+	animate_lamps(lamps)
+
+	-- animate fire
+	-- local fire = msg.url(nil, "fire", nil)
+	-- go.animate(fire, "scale", go.PLAYBACK_LOOP_PINGPONG, vmath.vector3(1.05, 0.95, 1), go.EASING_INOUTSINE, 0.3)
+	-- go.animate(fire, "euler.z", go.PLAYBACK_LOOP_PINGPONG, -3, go.EASING_INOUTSINE, 0.2)
+	-- go.animate(fire, "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3, go.EASING_INOUTSINE, 0.25, 0.1)
+
+	-- slower
+	local fire = msg.url(nil, "fire", nil)
+	go.animate(fire, "scale", go.PLAYBACK_LOOP_PINGPONG, vmath.vector3(1.02, 0.98, 1), go.EASING_INOUTSINE, 0.5)
+	go.animate(fire, "euler.z", go.PLAYBACK_LOOP_PINGPONG, -1, go.EASING_INOUTSINE, 0.4)
+	go.animate(fire, "euler.z", go.PLAYBACK_LOOP_PINGPONG, 1, go.EASING_INOUTSINE, 0.55, 0.15)
+
+	local fire_glow = msg.url(nil, "fire_glow", nil)
+	go.animate(fire_glow, "scale",
+		go.PLAYBACK_LOOP_PINGPONG, vmath.vector3(1.3, 1.3, 1),
+		go.EASING_INOUTSINE, 0.3)
+
+	-- cat white
+	local whitecat_body = msg.url(nil, "whitecat_body", nil)
+	go.animate(whitecat_body, "scale",
+		go.PLAYBACK_LOOP_PINGPONG, vmath.vector3(1, 0.99, 1),
+		go.EASING_INOUTSINE, 2.0)
+	animate_white_tail()
+
+	-- cat orange
+	local orangecat_smoke = msg.url(nil, "orangecat_smoke", "sprite")
+	go.set(orangecat_smoke, "tint", vmath.vector4(1, 1, 1, 0))
+
+	local function animate_smoke()
+		go.set(orangecat_smoke, "tint", vmath.vector4(1, 1, 1, 0))
+		go.set_position(vmath.vector3(go.get_position("/orangecat_smoke").x, 54, go.get_position("/orangecat_smoke").z),
+			"/orangecat_smoke")
+
+		go.animate(orangecat_smoke, "tint", go.PLAYBACK_ONCE_PINGPONG,
+			vmath.vector4(1, 1, 1, 1), go.EASING_INOUTSINE, 3.5)
+
+		go.animate("/orangecat_smoke", "position.y", go.PLAYBACK_ONCE_FORWARD,
+			80, go.EASING_INOUTSINE, 2, 0, function()
+				timer.delay(random_included(2, 5), false, animate_smoke)
+			end)
+	end
+	timer.delay(2, false, animate_smoke)
+
+
+	local tall_smple_sprite = msg.url(nil, "tall_cup_smoke", "sprite")
+	go.set(tall_smple_sprite, "tint", vmath.vector4(1, 1, 1, 0))
+	local function animate_tall_smoke()
+		go.set(tall_smple_sprite, "tint", vmath.vector4(1, 1, 1, 0))
+		go.set_position(vmath.vector3(go.get_position("/tall_cup_smoke").x, 52, go.get_position("/tall_cup_smoke").z),
+			"/tall_cup_smoke")
+
+		go.animate(tall_smple_sprite, "tint", go.PLAYBACK_ONCE_PINGPONG,
+			vmath.vector4(1, 1, 1, 1), go.EASING_INOUTSINE, 3.5)
+
+		go.animate("/tall_cup_smoke", "position.y", go.PLAYBACK_ONCE_FORWARD,
+			72, go.EASING_INOUTSINE, 2, 0, function()
+				timer.delay(random_included(3, 6), false, animate_tall_smoke)
+			end)
+	end
+	timer.delay(4, false, animate_tall_smoke)
+
+	local orangecat_body = msg.url(nil, "orangecat_body", nil)
+	go.animate(orangecat_body, "scale",
+		go.PLAYBACK_LOOP_PINGPONG, vmath.vector3(1, 1.01, 1),
+		go.EASING_INOUTSINE, 2.0)
+	animate_orange_tail()
+	local orangecat_eye = msg.url(nil, "orangecat_eye", nil)
+	-- tween the eye like blinking, randomly every 3 to 6 seconds
+	local function blink_eye()
+		local blinks = math.random(1, 2)
+		local duration = blinks * 0.1
+
+		local function do_blink()
+			go.animate(orangecat_eye, "scale.y", go.PLAYBACK_ONCE_PINGPONG, 0.1,
+				go.EASING_INOUTSINE, duration, 0, function()
+					blinks = blinks - 1
+					if blinks > 0 then
+						do_blink()
+					else
+						-- wait random delay before animating again
+						local delay = random_included(3, 6)
+						timer.delay(delay, false, blink_eye)
+					end
+				end)
+		end
+
+		do_blink()
+	end
+
+	blink_eye()
+
+
+	local fall_star_1_pos = go.get_position("/falling_star")
+	local fall_star_2_pos = go.get_position("/falling_star1")
+	local fall_star_3_pos = go.get_position("/falling_star2")
+
+	local function fall_star_1()
+		go.set_position(fall_star_1_pos, "/falling_star")
+		go.set_scale(math.random(5, 10) / 10, "/falling_star")
+		go.animate("/falling_star", "position", go.PLAYBACK_ONCE_FORWARD, vmath.vector3(-250, 468, -0.1),
+			go.EASING_LINEAR, 3, 0, function()
+				fall_star_1()
+			end)
+	end
+
+	local function fall_star_2()
+		go.set_position(fall_star_2_pos, "/falling_star1")
+		go.set_scale(math.random(5, 10) / 10, "/falling_star1")
+		go.animate("/falling_star1", "position", go.PLAYBACK_ONCE_FORWARD, vmath.vector3(-250, 700, -0.1),
+			go.EASING_LINEAR, 3, 2, function()
+				fall_star_2()
+			end)
+	end
+
+	local function fall_star_3()
+		go.set_position(fall_star_3_pos, "/falling_star2")
+		go.set_scale(math.random(5, 10) / 10, "/falling_star2")
+		go.animate("/falling_star2", "position", go.PLAYBACK_ONCE_FORWARD, vmath.vector3(-250, 225, -0.1),
+			go.EASING_LINEAR, 3, 4, function()
+				fall_star_3()
+			end)
+	end
+
+	fall_star_1()
+	fall_star_2()
+	fall_star_3()
+end
+
+function animate_white_tail()
+	local tail_url = msg.url(nil, "white_tail", nil)
+	local wiggles = random_included(2, 5)
+	local duration = random_included(0.8, 1.2) -- random between 0.8 and 1.2
+
+	local function wiggle()
+		go.animate(tail_url, "euler.z", go.PLAYBACK_ONCE_PINGPONG, 10, go.EASING_INOUTSINE, duration, 0, function()
+			wiggles = wiggles - 1
+			if wiggles > 0 then
+				wiggle()
+			else
+				-- wait random delay before animating again
+				local delay = random_included(2, 4)
+				timer.delay(delay, false, animate_white_tail)
+			end
+		end)
+	end
+
+	wiggle()
+end
+
+function animate_orange_tail()
+	local tail_url = msg.url(nil, "orange_tail", nil)
+	local wiggles = random_included(10, 15)
+	local duration = 0.3
+
+	local function wiggle()
+		go.animate(tail_url, "euler.z", go.PLAYBACK_ONCE_PINGPONG, 10, go.EASING_INOUTSINE, duration, 0, function()
+			wiggles = wiggles - 1
+			if wiggles > 0 then
+				wiggle()
+			else
+				-- wait random delay before animating again
+				local delay = random_included(2, 4)
+				timer.delay(delay, false, animate_orange_tail)
+			end
+		end)
+	end
+
+	wiggle()
+end
+
+function random_included(min, max)
+	return min + math.random() * (max - min)
+end
+
+function animate_lamps(lamps)
+	local current = 1
+	local delay = 0.2
+
+	local turn_on, turn_off
+
+	turn_on = function()
+		if current <= #lamps then
+			msg.post(lamps[current], "enable")
+			current = current + 1
+			timer.delay(delay, false, turn_on)
+		else
+			-- all on, now turn off
+			current = 1
+			timer.delay(delay, false, turn_off)
+		end
+	end
+
+	turn_off = function()
+		if current <= #lamps then
+			msg.post(lamps[current], "disable")
+			current = current + 1
+			timer.delay(delay, false, turn_off)
+		else
+			-- all off, loop back to turning on
+			current = 1
+			timer.delay(delay, false, turn_on)
+		end
+	end
+
+	turn_on()
+end

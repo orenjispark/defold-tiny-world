@@ -1,0 +1,22 @@
+{
+  "project_git" : {
+    "sha1" : "b917cd3d96e93765c44501e2e8c1d349ae4a1d90",
+    "branch" : "main"
+  },
+  "bob_arguments" : {
+    "sha1" : "1c76521bb8b08c63ef619aa8a5ab563dddf7b3cf",
+    "version" : "1.10.3",
+    "timestamp" : "2025-06-29 08:05:31"
+  },
+  "defold_sdk" : "1c76521bb8b08c63ef619aa8a5ab563dddf7b3cf",
+  "dependencies" : [ {
+    "link" : "https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip",
+    "md5" : "6145181B4CF7433B8E156A965EE0CBB0"
+  }, {
+    "link" : "https://github.com/Insality/druid/archive/refs/tags/1.1.2.zip",
+    "md5" : "E061780E14709C91EE5A362C5B94E91D"
+  }, {
+    "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
+    "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+  } ]
+}

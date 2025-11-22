@@ -1,0 +1,68 @@
+images {
+  image: "/main/collections/wishes/sprites/background.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/chimney.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/fire.png"
+  pivot_y: 0.77627
+}
+images {
+  image: "/main/collections/wishes/sprites/lamp.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/orange-cat-tail.png"
+  pivot_x: 0.148428
+  pivot_y: 0.843863
+}
+images {
+  image: "/main/collections/wishes/sprites/orange-cat.png"
+  pivot_y: 0.9
+}
+images {
+  image: "/main/collections/wishes/sprites/preview.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/sky.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/snow.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/snowflake.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/star-trail.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/white-cat-tail.png"
+  pivot_x: 0.649478
+  pivot_y: 0.153221
+}
+images {
+  image: "/main/collections/wishes/sprites/white-cat.png"
+  pivot_y: 0.9
+}
+images {
+  image: "/main/collections/wishes/sprites/window.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/one-px-square-white.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/orange-cat-eyes.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/lamp-glow.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/coffee-tall.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/chimney-glow.png"
+}
+images {
+  image: "/main/collections/wishes/sprites/fog.png"
+}
+extrude_borders: 2

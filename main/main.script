@@ -1,0 +1,21 @@
+function init(self)
+	msg.post("/scene_proxy", "acquire_input_focus")
+
+	-- msg.post("@render:", "clear_color", { color = vmath.vector4(246/255, 242/255, 224/255, 1) } )
+
+	math.randomseed(os.time())
+	math.random()
+	math.random()
+	math.random()
+
+	msg.post("/scene_proxy#wishes", "load")
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("proxy_loaded") then
+		-- New world is loaded. Init and enable it.
+		print("new world is loaded")
+		msg.post(sender, "init")
+		msg.post(sender, "enable")
+	end
+end

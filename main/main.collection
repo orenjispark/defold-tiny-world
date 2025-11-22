@@ -1,0 +1,61 @@
+name: "main"
+instances {
+  id: "camera"
+  prototype: "/orthographic/camera.go"
+  position {
+    x: 540.0
+    y: 960.0
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "near_z"
+      value: "-1000.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "far_z"
+      value: "1000.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "automatic_zoom"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "scene_proxy"
+  data: "embedded_components {\n"
+  "  id: \"wishes\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/main/collections/wishes/wishes.collection\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "_main"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "audio_manager"
+  data: "components {\n"
+  "  id: \"audio_manager\"\n"
+  "  component: \"/main/modules/audio_manager.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"bgm\"\n"
+  "  type: \"sound\"\n"
+  "  data: \"sound: \\\"/main/collections/wishes/audio/christmas-holiday-438466.wav\\\"\\n"
+  "looping: 1\\n"
+  "\"\n"
+  "}\n"
+  ""
+}

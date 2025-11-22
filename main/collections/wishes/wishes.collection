@@ -1,0 +1,1048 @@
+name: "wishes"
+scale_along_z: 0
+embedded_instances {
+  id: "wall"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"background\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 960.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "sky"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"sky\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1080.0\\n"
+  "  y: 1920.0\\n"
+  "}\\n"
+  "size_mode: SIZE_MODE_MANUAL\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 960.0
+    z: -1.0
+  }
+}
+embedded_instances {
+  id: "window"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"window\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 802.0\\n"
+  "  y: 1285.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 1150.0
+    z: 3.0
+  }
+}
+embedded_instances {
+  id: "lamp"
+  children: "lamp_"
+  children: "lamp_1"
+  children: "lamp_10"
+  children: "lamp_11"
+  children: "lamp_12"
+  children: "lamp_13"
+  children: "lamp_14"
+  children: "lamp_15"
+  children: "lamp_16"
+  children: "lamp_17"
+  children: "lamp_18"
+  children: "lamp_2"
+  children: "lamp_3"
+  children: "lamp_4"
+  children: "lamp_5"
+  children: "lamp_6"
+  children: "lamp_7"
+  children: "lamp_8"
+  children: "lamp_9"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 802.0\\n"
+  "  y: 1285.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 1642.5
+    z: 20.0
+  }
+}
+embedded_instances {
+  id: "chimney"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"chimney\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 802.0\\n"
+  "  y: 1285.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 197.0
+    z: 5.0
+  }
+}
+embedded_instances {
+  id: "fire"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"fire\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1080.0\\n"
+  "  y: 395.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: -53.0
+    z: 20.0
+  }
+}
+embedded_instances {
+  id: "white_cat"
+  children: "white_tail"
+  children: "whitecat_body"
+  data: ""
+  position {
+    x: 252.0
+    y: 412.0
+    z: 10.0
+  }
+}
+embedded_instances {
+  id: "white_tail"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"white-cat-tail\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 96.0\\n"
+  "  y: 148.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -84.0
+    y: -5.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "orange_cat"
+  children: "orange_tail"
+  children: "orangecat_body"
+  children: "orangecat_eye"
+  children: "orangecat_smoke"
+  data: ""
+  position {
+    x: 799.0
+    y: 397.0
+    z: 10.0
+  }
+}
+embedded_instances {
+  id: "orange_tail"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"orange-cat-tail\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 96.0\\n"
+  "  y: 148.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 127.0
+    y: 29.0
+    z: -0.1
+  }
+}
+embedded_instances {
+  id: "black"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"one-px-square-white\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  scale {\n"
+  "    x: 1080.0\n"
+  "    y: 1920.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 960.0
+    z: 12.0
+  }
+}
+embedded_instances {
+  id: "_wishes"
+  data: "components {\n"
+  "  id: \"wishes\"\n"
+  "  component: \"/main/collections/wishes/wishes.script\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "snow_particle"
+  data: "components {\n"
+  "  id: \"snow\"\n"
+  "  component: \"/main/collections/wishes/particles/snow.particlefx\"\n"
+  "}\n"
+  ""
+  position {
+    x: 505.0
+    y: 2166.0
+  }
+}
+embedded_instances {
+  id: "snowball_particle"
+  data: "components {\n"
+  "  id: \"snow_ball\"\n"
+  "  component: \"/main/collections/wishes/particles/snow_ball.particlefx\"\n"
+  "}\n"
+  ""
+  position {
+    x: 505.0
+    y: 2166.0
+  }
+}
+embedded_instances {
+  id: "orangecat_body"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"orange-cat\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 335.0\\n"
+  "  y: 286.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "whitecat_body"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"white-cat\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 300.0\\n"
+  "  y: 388.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "falling_star"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"star-trail\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 170.0\\n"
+  "  y: 113.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1345.0
+    y: 1668.0
+    z: -0.1
+  }
+}
+embedded_instances {
+  id: "falling_star1"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"star-trail\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 170.0\\n"
+  "  y: 113.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1345.0
+    y: 1900.0
+    z: -0.1
+  }
+}
+embedded_instances {
+  id: "falling_star2"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"star-trail\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 170.0\\n"
+  "  y: 113.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1345.0
+    y: 1425.0
+    z: -0.1
+  }
+}
+embedded_instances {
+  id: "orangecat_eye"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"orange-cat-eyes\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -41.0
+    y: 117.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "fire_particle"
+  data: "components {\n"
+  "  id: \"fire\"\n"
+  "  component: \"/main/collections/wishes/particles/fire.particlefx\"\n"
+  "}\n"
+  ""
+  position {
+    x: 539.0
+    y: -193.0
+    z: 20.0
+  }
+}
+embedded_instances {
+  id: "lamp_"
+  data: ""
+}
+embedded_instances {
+  id: "lamp_1"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -497.0
+    y: -116.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_2"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -408.0
+    y: -187.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_3"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -320.0
+    y: -100.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_4"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -206.0
+    y: -133.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_5"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -146.0
+    y: -29.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_6"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -36.0
+    y: -37.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_7"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -17.0
+    y: 82.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_8"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 97.0
+    y: 93.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_9"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 98.0
+    y: 223.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_10"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 258.0
+    y: 421.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_11"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 253.0
+    y: 423.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_12"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 253.0
+    y: 423.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_13"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 255.0
+    y: 228.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_14"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 254.0
+    y: 98.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_15"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 370.0
+    y: 89.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_16"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 389.0
+    y: -31.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_17"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 499.0
+    y: -27.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "lamp_18"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"lamp-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 171.0\\n"
+  "  y: 171.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 552.0
+    y: -126.0
+    z: 0.1
+  }
+}
+embedded_instances {
+  id: "fire_glow"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"chimney-glow\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 540.0
+    y: 73.0
+    z: 12.0
+  }
+  scale3 {
+    x: 1.2
+    y: 1.2
+  }
+}
+embedded_instances {
+  id: "orangecat_smoke"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"fog\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 0.2\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -48.0
+    y: 54.0
+  }
+}
+embedded_instances {
+  id: "tall_cup"
+  children: "tall_cup_smoke"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"coffee-tall\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 455.0
+    y: 421.0
+    z: 12.0
+  }
+}
+embedded_instances {
+  id: "tall_cup_smoke"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"fog\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 0.1\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    y: 52.0
+  }
+}
+embedded_instances {
+  id: "frames"
+  data: "embedded_components {\n"
+  "  id: \"frame_1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"one-px-square-white\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -1000.0\n"
+  "    y: 1000.0\n"
+  "  }\n"
+  "  scale {\n"
+  "    x: 2000.0\n"
+  "    y: 2000.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"frame_2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"one-px-square-white\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1.0\\n"
+  "  y: 1.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 2080.0\n"
+  "    y: 1000.0\n"
+  "  }\n"
+  "  scale {\n"
+  "    x: 2000.0\n"
+  "    y: 2000.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"frame_3\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"one-px-square-white\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1.0\\n"
+  "  y: 1.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 540.0\n"
+  "    y: -1000.0\n"
+  "  }\n"
+  "  scale {\n"
+  "    x: 5080.0\n"
+  "    y: 2000.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"frame_4\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"one-px-square-white\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1.0\\n"
+  "  y: 1.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/collections/wishes/sprites/_wishes.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 540.0\n"
+  "    y: 2920.0\n"
+  "  }\n"
+  "  scale {\n"
+  "    x: 5080.0\n"
+  "    y: 2000.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    z: 100.0
+  }
+}
