@@ -1,0 +1,23 @@
+{
+  "project_git" : {
+    "sha1" : "167ddb36f3ee45c7a51e6aebbfcbaa5eb9894ebb",
+    "origin" : "https://github.com/orenjispark/defold-tiny-world.git",
+    "branch" : "main"
+  },
+  "bob_arguments" : {
+    "sha1" : "1c76521bb8b08c63ef619aa8a5ab563dddf7b3cf",
+    "version" : "1.10.3",
+    "timestamp" : "2025-06-29 08:05:31"
+  },
+  "defold_sdk" : "1c76521bb8b08c63ef619aa8a5ab563dddf7b3cf",
+  "dependencies" : [ {
+    "link" : "https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip",
+    "md5" : "6145181B4CF7433B8E156A965EE0CBB0"
+  }, {
+    "link" : "https://github.com/Insality/druid/archive/refs/tags/1.1.2.zip",
+    "md5" : "E061780E14709C91EE5A362C5B94E91D"
+  }, {
+    "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
+    "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+  } ]
+}

@@ -16,8 +16,6 @@ input_method = HiddenInputField
 scale_mode = stretch
 wasm_streaming = 1
 show_fullscreen_button = 0
-show_made_with_defold = 0
-splash_image = /main/assets/sprites/capybara/8.png
 
 [project]
 title = Animate
@@ -38,4 +36,7 @@ game_binding = /builtins/input/all.input_bindingc
 
 [gamedistribution]
 game_id = GAME_ID_HERE
+
+[sound]
+sample_frame_count = 2048
 
